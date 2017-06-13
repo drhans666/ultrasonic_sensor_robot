@@ -1,5 +1,6 @@
 # ultrasonic_sensor_robot
 Script has two parts:
+
 PART 1:
 radar.py, database.py, distance.py
 This part let you handle Your robot which should conatin of 5v, 180 degree servo engine and HC SR04 ultrasonic sensor. You run it by opening radar.py. It takes measurements and save them to database.
