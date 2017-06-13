@@ -10,3 +10,5 @@ PART 2:
 
 Second part consist of desktop.py which should be on your PC/Raspberry pi with desktop version of raspbian. When You transfer your sensor database from raspberry pi to your PC(if youre working with raspbian headless) or You have desktop version of raspbian
 this part processes raw database data to X, Y coordinates and visualises them with pyplot chart. Visualization need some final touch ;)
+
+I've added example database -robotbase.db
