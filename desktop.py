@@ -9,11 +9,13 @@ import math as m
 # gets measurements from database and puts them segregated in list of lists.
 # every sublist contains specified measurement from all cycles
 def get_data():
-    # predefined list schema contains lists of specified measurement of all cycles
+    # list is populated with lists containing measures from all cycles
     list_measures = []
     # predefined list with integer(number of measurement in database)  that goes +1 for every loop
     measure_number = [0]
-    for i in range(20):
+    c.execute("SELECT max(measure) FROM tests")
+    measure_range = c.fetchone()[0]
+    for i in range(measure_range):
         list_measures.append([])
         measure_number.append(measure_number[0] + 1)
         measure_number.remove(measure_number[0])
